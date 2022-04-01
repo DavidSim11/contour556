@@ -15,7 +15,6 @@
      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
 
 </head>
-
 <body>
        <section class="header">
 
@@ -25,7 +24,7 @@
     <div class="nav-links" id="navLinks">
         <i class="fa fa-window-close" onclick="hideMenu()"></i>
         <ul>
-            <li><a href="">ABOUT US</a></li>
+            <li><a href="about.html">ABOUT US</a></li>
             <li><a href="">FESTIVALS</a></li>
             <li><a href="">SUPPORTERS</a></li>
             <li><a href="">NEWS</a></li>
@@ -38,11 +37,19 @@
     <h1>Canberra Art Biennial</h1>
     <p>Contour556 returns for the 4th edition this October.<br>Contour 556 acknowledges the Ngunnawal people, the traditional custodians of the land on which we live, work, rest and play. <br> Bigger and Better than Before.
     </p>
+
     <a href="" class="hero-btn">Learn More</a>
-
 </div>
-
 </section>
+
+<!----Count Down------>
+<section>
+    <div class="clock">
+        <h1>Count Down Until Contour 556 Returns</h1>
+        <p id="demo"></p>
+    </div>
+</section>
+
 
 <!----ABOUT US Redesign----->
 
@@ -75,6 +82,34 @@
     </div>
 </section>
 
+<!----Festivals------>
+<section class="festivals">
+    <h1>Festivals</h1>
+    <p>Canberra Art Biennial extends across Canberra’s public spaces, and we are excited to partner with more  private and public gallery / cultural spaces in inner north and south Canberra.</p>
+    <b>Artists will be responding  to the designed city of Canberra: represented by Australia’s political, cultural and physical history. The event engages people of all ages and abilities, delighting, puzzling and encouraging interaction with art and public space. </b>
+
+    <div class="row">
+    <div class="festivals-col">
+        <img  src="assets/images/2022.jpg">
+        <h3>2022 Festival</h3>
+    </div>
+    <div class="festivals-col">
+        <img  src="assets/images/2020.jpg">
+        <h3>2020 Festival</h3>
+    </div>
+    <div class="festivals-col">
+        <img  src="assets/images/2018.jpg">
+        <h3>2018 Festival</h3>
+    </div>
+    </div>
+</section>
+
+<!-------Donate------>
+<section class="donate">
+    <h1>Your Donations Makes Art Possible</h1>
+    <a href="" class="hero-btn">DONATE NOW</a>
+</section>
+
 <!---City Commisions Redesign--->
 <section class="citycommissions">
     <h1>City Commissions</h1>
@@ -92,35 +127,11 @@
 
 </section>
 
-<!----Festivals------>
-<section class="festivals">
-    <h1>Festivals</h1>
-    <p>Canberra Art Biennial extends across Canberra’s public spaces, and we are excited to partner with more  private and public gallery / cultural spaces in inner north and south Canberra.</p>
-    <b>Artists will be responding  to the designed city of Canberra: represented by Australia’s political, cultural and physical history. The event engages people of all ages and abilities, delighting, puzzling and encouraging interaction with art and public space. </b>
-
-    <div class="row">
-    <div class="festivals-col">
-        <img src="assets/images/2022.jpg">
-        <h3>2022 Festival</h3>
-    </div>
-    <div class="festivals-col">
-        <img src="assets/images/2020.jpg">
-        <h3>2020 Festival</h3>
-    </div>
-    <div class="festivals-col">
-        <img src="assets/images/2018.jpg">
-        <h3>2018 Festival</h3>
-    </div>
-    </div>
+<!-------SlideShow-------->
+<section>
+    <h1>Art & Artists</h1>
 </section>
 
-<!-------Donate------>
-<section class="donate">
-    <h1>Your Donations Makes Art Possible</h1>
-    <a href="" class="hero-btn">DONATE NOW</a>
-
-
-</section>
 
 <!-----JavaScript for Toggle Menu----->
 <script>
@@ -132,6 +143,43 @@
        navLinks.style.right ="-200px";
    }
 </script>
+
+<!------JavaScript for SlideShow------->
+<script>
+    var myIndex = 0;
+    carousel();
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}
+      x[myIndex-1].style.display = "block";
+      setTimeout(carousel, 3000);
+    }
+    </script>
+
+<!-----JavaScript for Count Down Clock------>
+<script>
+    var countDownDate = new Date("Oct 1, 2022 00:00:00").getTime();
+    var x = setInterval(function() {
+      var now = new Date().getTime();
+      var distance = countDownDate - now;
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+      document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+      + minutes + "m " + seconds + "s ";
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "EXPIRED";
+      }
+    }, 1000);
+    </script>
+
 
 
 </body>

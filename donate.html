@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <html lang="en"></html>
+
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <title>Donate Now</title>
+
+<!---Fonts for the website-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600;700&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+
+</head>
+<section class="header3">
+    <body>
+        <nav>
+        <a href="index.html"><img src="assets\images\logo.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-window-close" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT US</a></li>
+                <li><a href="">FESTIVALS</a></li>
+                <li><a href="">NEWS</a></li>
+                <li><a href="donate.html">DONATE</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="text-box">
+            <h1>Donate Today</h1>
+           <p>Your donation helps keep canberra art biennial a free event for all to enjoy.
+               <br>Donations support artists directly, donations are directed towards artists fees, accommodation and travel.</p>
+        </div>
+</section>
+
+<div class="donations">
+     <p>Donations can be directed towards specific support for particular artists and their project. 
+        <br>Your donations will directly support artists, ensuring their participation in this significant international event.</p>
+</div>
+<!------------Donation forum--------------->
+      <div class="container">
+        <form action="action_page.php">
+          <div class="row">
+            <div class="col-25">
+              <label for="name">Your Name</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="name" name="name" placeholder="Your Name..">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="email">E-mail address</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="email" name="E-mail" placeholder="Your E-mail address">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="Australian State">Australian State</label>
+            </div>
+            <div class="col-75">
+              <select id="Australian State" name="State">
+                <option value="ACT">ACT</option>
+                <option value="NSW">NSW</option>
+                <option value="QLD">QLD</option>
+                <option value="VIC">VIC</option>
+                <option value="TAS">TAS</option>
+                <option value="NT">NT</option>
+                <option value="SA">SA</option>
+                <option value="WA">WA</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="Amount">Amount</label>
+            </div>
+            <div class="col-75">
+              <select id="Amount" name="Amount">
+                <option value="2">$2</option>
+                <option value="5">$5</option>
+                <option value="10">$10</option>
+                <option value="50">$50</option>
+                <option value="100">$100</option>
+                <option value="250">$250</option>
+                <option value="500">$500</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="Message">Message to our Artists</label>
+            </div>
+            <div class="col-75">
+              <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+            </div>
+          </div>
+          <div class="row">
+            <input type="submit" value="Submit">
+          </div>
+        </form>
+      </div>
+          </form>
+      </div>
+</section>
+</body>
+
+<footer>
+
+
+
+</footer>
+</html>

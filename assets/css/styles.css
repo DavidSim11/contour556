@@ -294,10 +294,74 @@ ul.a {
 
 /*----About Us Page-----*/
 .header2 {
-    min-height: 100vh;
+    min-height: 5vh;
     width: 100%;
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(25, 26, 26, 0.966)), url(../images/aboutuspage.jpg);
+    background: linear-gradient(rgba(31, 30, 30, 0.7), rgba(69, 71, 71, 0.966)), url(../images/background.png);
     background-position: center; 
     background-size: cover;
     position: relative;
 }
+
+/*-----Donate Page----*/
+.header3 {
+    min-height: 30vh;
+    width: 100%;
+    background: linear-gradient(rgba(58, 55, 55, 0.7), rgba(59, 61, 61, 0.966)), url(../images/donateheroimg.jpg);
+    background-position: center; 
+    background-size: cover;
+    position: relative;
+}
+.donations p {
+    text-align: center;
+    font-size: medium;
+}
+input[type=text], select, textarea{
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 40px;
+    box-sizing: border-box;
+    resize: vertical;
+  }
+
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  
+  input[type=submit] {
+    background-color: #e2b215;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    float: right;
+  }
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  @media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+  

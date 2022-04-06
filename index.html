@@ -50,38 +50,6 @@
     </div>
 </section>
 
-
-<!----ABOUT US Redesign----->
-
-<section class="aboutus">
-    <h1>About Us</h1>
-    <p>Contour 556 is Canberra's biennial public art festival, curated by Neil Hobbs.Contour 556 is the water level of Lake Burley Griffin, which links the event in name as well as in purpose to the history of the central Canberra landscape.
-        The artworks and installations selected for the festival respond in some way to Canberra’s history, from 50,000 years to the present day. contour 556 will therefore offer the Canberra, Australian and international community a unique opportunity to engage with and understand the layers of Canberra’s history through art.</p>
-
-    <div class="row">
-        <div class="about-col">
-            <h3>Festivals</h3>
-             <p>The 2022 edition sees the festival rebranded as Canberra Art Biennial, and sees expansion to the National Arboretum (contour 656),
-                the University of Canberra (contour 606) as well as maintaining and building further on our presence in North and South Canberra, centred on contour 556, the height above sea level of Lake Burley Griffin.</p>
-              </div>
-              <div class="about-col">
-                <h3>City Commissions</h3>
-                 <p> Contour 556 congratulates the selected artists for the Creative Recovery and Resilience Program in association with artsACT.
-                     <ul class="a">
-                         <li>Alison Alder</li>
-                         <li>Michael Sollis</li>
-                         <li>Sammy Hawker</li>
-                     </ul> </p>
-              </div>
-              <div class="about-col">
-                  <h4>Sponsors & Supporters</h4>
-                  <p> Hello and thank you all contour 556 supporters and sponsors.
-                      <b>We received $9150 through the platform and a further $6600 directly. That is a great start for the 2022 event and it is wonderful to have support from such a wide group of people, some of whom we haven't met yet!</b></p>
-                  <h4><a href="" class="hero-button3">Learn More</a></h4>
-              </div>
-    </div>
-</section>
-
 <!----Festivals------>
 <section class="festivals">
     <h1>Festivals</h1>
@@ -110,12 +78,6 @@
     <a href="donate.html" class="hero-btn">DONATE NOW</a>
 </section>
 
-<!-------SlideShow-------->
-<section>
-    <h1>Art & Artists</h1>
-</section>
-
-
 <!-----JavaScript for Toggle Menu----->
 <script>
    var navLinks = document.getElementById("navLinks");
@@ -126,23 +88,6 @@
        navLinks.style.right ="-200px";
    }
 </script>
-
-<!------JavaScript for SlideShow------->
-<script>
-    var myIndex = 0;
-    carousel();
-    function carousel() {
-      var i;
-      var x = document.getElementsByClassName("mySlides");
-      for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
-      }
-      myIndex++;
-      if (myIndex > x.length) {myIndex = 1}
-      x[myIndex-1].style.display = "block";
-      setTimeout(carousel, 3000);
-    }
-    </script>
 
 <!-----JavaScript for Count Down Clock------>
 <script>
@@ -162,13 +107,29 @@
       }
     }, 1000);
     </script>
-
-
-
+    
 </body>
-<!-------FOOTER------------->
-<div class="footer">
-    <h2></h2>
-</div>
-
-</html>
+<!--------Footer-------->
+<section>
+    <div class="footer-container">
+        <div class="footer">
+            <div class="footer-heading footer-1">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="festivals.html">Festivals</a>
+                <a href="news.html">News</a>
+                <a href="donate.html">Donate</a>
+            </div>
+            <div class="footer-heading footer-3">
+                <a href="#">Instagram</a>
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+            </div>
+            <div class="footer-email-form">
+                <h2>Join our Newsletter</h2>
+                <input type="email" placeholder="Enter your email address" id="footer-email">
+                <input type="submit" value="Sign up" id="footer-email-btn">
+            </div>
+        </div>
+      </div>
+</section>

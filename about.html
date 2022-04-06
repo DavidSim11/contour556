@@ -238,5 +238,39 @@
       });
     }
     </script>
+<!--------JavaScript for Menu------------->
+<script>
+  var navLinks = document.getElementById("navLinks");
+  function showMenu(){
+      navLinks.style.right = "0";
+  }
+  function hideMenu(){
+      navLinks.style.right ="-200px";
+  }
+</script>
 
+<!--------Footer-------->
+<section>
+  <div class="footer-container">
+      <div class="footer">
+          <div class="footer-heading footer-1">
+              <a href="index.html">Home</a>
+              <a href="about.html">About Us</a>
+              <a href="festivals.html">Festivals</a>
+              <a href="news.html">News</a>
+              <a href="donate.html">Donate</a>
+          </div>
+          <div class="footer-heading footer-3">
+              <a href="#">Instagram</a>
+              <a href="#">Facebook</a>
+              <a href="#">Twitter</a>
+          </div>
+          <div class="footer-email-form">
+              <h2>Join our Newsletter</h2>
+              <input type="email" placeholder="Enter your email address" id="footer-email">
+              <input type="submit" value="Sign up" id="footer-email-btn">
+          </div>
+      </div>
+    </div>
+</section>
 </html>

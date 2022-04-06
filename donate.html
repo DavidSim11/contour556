@@ -24,8 +24,8 @@
             <ul>
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="about.html">ABOUT US</a></li>
-                <li><a href="">FESTIVALS</a></li>
-                <li><a href="">NEWS</a></li>
+                <li><a href="festivals.html">FESTIVALS</a></li>
+                <li><a href="news.html">NEWS</a></li>
                 <li><a href="donate.html">DONATE</a></li>
             </ul>
         </div>
@@ -113,9 +113,38 @@
 </section>
 </body>
 
-<!-------FOOTER------------->
-<div class="footer">
-  <h2></h2>
-</div>
+<!--------Footer-------->
+<section>
+  <div class="footer-container">
+      <div class="footer">
+          <div class="footer-heading footer-1">
+              <a href="index.html">Home</a>
+              <a href="about.html">About Us</a>
+              <a href="festivals.html">Festivals</a>
+              <a href="news.html">News</a>
+              <a href="donate.html">Donate</a>
+          </div>
+          <div class="footer-heading footer-3">
+              <a href="#">Instagram</a>
+              <a href="#">Facebook</a>
+              <a href="#">Twitter</a>
+          </div>
+          <div class="footer-email-form">
+              <h2>Join our Newsletter</h2>
+              <input type="email" placeholder="Enter your email address" id="footer-email">
+              <input type="submit" value="Sign up" id="footer-email-btn">
+          </div>
+      </div>
+    </div>
+</section>
 
-</html>
+<!--------JavaScript for Menu------------->
+<script>
+  var navLinks = document.getElementById("navLinks");
+  function showMenu(){
+      navLinks.style.right = "0";
+  }
+  function hideMenu(){
+      navLinks.style.right ="-200px";
+  }
+</script>

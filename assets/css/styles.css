@@ -480,11 +480,13 @@ input[type=text], select, textarea{
     display: table;
     clear: both;
 }
-@media screen and (max-width: 600px){
-    .column {
-        width: 100%
+@media screen and (min-width: 600px){
+    .column2 {
+        width: 100%;
+        flex-direction:column
     }
 }
+
 .flip-card {
     background-color: transparent;
     width: 500px;
@@ -700,16 +702,18 @@ img {vertical-align: middle;}
 .slideshow p {
     text-align: center;
 }
-
+.slideshow img {
+    width: 100%;
+}
 /*------City Commissions------*/
-.column {
+.columntext {
     float: left;
 }
 .left {
-    width: 25%;
+    width: 50%;
 }
 .right {
-    width: 75%;
+    width: 50%;
 }
 .columntext h2 {
     text-align: center;
@@ -718,21 +722,23 @@ img {vertical-align: middle;}
 .columntext ul li {
     list-style: none;
     display: inline-block;
-    padding: 8px;
+    padding: 16px;
     position: relative;
     text-decoration: solid;
 }
 .column img{
-    height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-
+    width:100%;
+    height:auto;
+    display: inline-block;
 }
 @media screen and (max-width: 600px){
+    .columntext {
+        width: 100%;
+        flex-direction: column;
+    }
     .column {
         width: 100%;
+        flex-direction: column;
     }
 }
   /*------------Footer------------*/

@@ -5,7 +5,7 @@
         <head>
         
             <meta name="viewport" content="with=device-width, initial-scale=1.0">
-            <title>About Us</title>
+            <title>Donations | Supporters</title>
         
             <link rel="stylesheet" href="assets/css/styles.css">
         
@@ -37,22 +37,19 @@
      </section>
 
 <!---------Donate Header-------------->
-<Section class="tabheader">
-    <div class="text-box">
+    <div class="header-box">
         <h1>Donate Today</h1>
         <p>Your donation helps keep canberra art biennial a free event for all to enjoy.
         <br>Donations support artists directly, donations are directed towards artists fees, accommodation and travel.
         <br>Donations can be directed towards specific support for particular artists and their project. 
         <br>Your donations will directly support artists, ensuring their participation in this significant international event.</p>
     </div>
-</Section>
-
 <!---------Donate Section------------->
 <div class="container">
     <form action="action_page.php">
       <div class="row">
         <div class="col-25">
-          <label for="name">Your Name</label>
+          <label for="name">Your Name:</label>
         </div>
         <div class="col-75">
           <input type="text" id="name" name="name" placeholder="Your Name..">
@@ -60,7 +57,7 @@
       </div>
       <div class="row">
         <div class="col-25">
-          <label for="email">E-mail address</label>
+          <label for="email">E-mail address:</label>
         </div>
         <div class="col-75">
           <input type="text" id="email" name="E-mail" placeholder="Your E-mail address">
@@ -68,7 +65,7 @@
       </div>
       <div class="row">
         <div class="col-25">
-          <label for="Australian State">Australian State</label>
+          <label for="Australian State">Australian State:</label>
         </div>
         <div class="col-75">
           <select id="Australian State" name="State">
@@ -85,7 +82,7 @@
       </div>
       <div class="row">
         <div class="col-25">
-          <label for="Amount">Amount</label>
+          <label for="Amount">Amount:</label>
         </div>
         <div class="col-75">
           <select id="Amount" name="Amount">
@@ -101,14 +98,14 @@
       </div>
       <div class="row">
         <div class="col-25">
-          <label for="Message">Message to our Artists</label>
+          <label for="Message">Message to our Artists:</label>
         </div>
         <div class="col-75">
           <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
         </div>
       </div>
       <div class="row">
-        <input type="submit" value="Submit">
+        <button>submit</button>
       </div>
     </form>
   </div>
@@ -116,7 +113,52 @@
   </div>
 </section>
 </body>
-
+<!--------Line break----------->
+<section class="line-break"></section>
+<!---------Supporters------------>
+  <div class="supporters-text">
+  <h1>Thank you to all our Contour 556 Supporters</h1>
+  <h2>Your Donations make art possible</h2>
+  <p>We received $9150 through the platform and a further $6600 directly. That is a great start for the 2022 event and it is wonderful to have support from such a wide group of people, some of whom we haven't met yet!</p>
+  </div>
+  <div class="supporters-list">
+    <h1>Supporters 2022</h1>
+    <p>$1000+</p>
+      <ul>
+        <li>University of Canberra</li>
+        <li>Gordon Bull & Deborah Clark</li>
+        <li>The Keir Foundation</li>
+        <li>David Williams</li>
+        <li>Sullivan Strumpf</li>
+        <li>Katharine Glass</li>
+      </ul>
+      <p>$500 - $999</p>
+      <ul>
+        <li>Darren Knight</li>
+        <li>Neil Hobbs</li>
+        <li>Evan Savescu</li>
+        <li>Trilogy Network Solutions</li>
+        <li>Kevin Miller</li>
+        <li>Christiane Lawin</li>
+      </ul>
+      <p>$100 - $499</p>
+      <ul>
+        <li>Claudia Morris</li>
+        <li>Hester Gascoigne</li>
+        <li>John Gasson</li>
+        <li>Paul Ferman</li>
+        <li>Fiona McIntosh</li>
+        <li>Dimitri Nikias</li>
+        <li>Samantha Ferris</li>
+        <li>Alastair MacCallum</li>
+        <li>Nicola Dickson</li>
+        <li>Bill Magee</li>
+        <li>Toss Gascoigne</li>
+        <li>Paris Kami & Dot</li>
+        <li>Dot Wilkin</li>
+        <li>4 X Anonymous</li>
+      </ul>
+  </div>
 <!--------Footer-------->
 <section>
     <div class="footer-container">
@@ -143,3 +185,14 @@
       </div>
 </section>
 </html>
+
+<!-----JavaScript for Toggle Menu----->
+<script>
+  var navLinks = document.getElementById("navLinks");
+  function showMenu(){
+      navLinks.style.right = "0";
+  }
+  function hideMenu(){
+      navLinks.style.right ="-200px";
+  }
+</script>

@@ -307,60 +307,6 @@ ul.a {
     background: #9faa04;
     transition: 1s;
 }
-
-/*-----Our team section (About us Page)---------*/
-.ourteam h2{
-    text-align: center;
-}
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-  }
-  html {
-    box-sizing: border-box;
-  }
-  .column {
-    float: left;
-    width: 25%;
-    margin-bottom: 16px;
-    padding: 0 8px;
-  }
-  .ourteam img{
-      width: 100%;
-  }
-  
-  .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    margin: 0px;
-  }
-  
-  .about-section {
-    padding: 50px;
-    text-align: center;
-    background-color: #474e5d;
-    color: white;
-  }
-  
-  .container {
-    padding: 0 16px;
-  }
-  
-  .container::after, .row::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-  
-  .title {
-    color: grey;
-  }
-  @media screen and (max-width: 650px) {
-    .column {
-      width: 100%;
-      display: block;
-    }
-  }
-
 /*-----Donate Page----*/
 .header3 {
     min-height: 30vh;
@@ -374,49 +320,7 @@ body {
     text-align: center;
     font-size: medium;
 }
-input[type=text], select, textarea{
-    width: 100%;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 40px;
-    box-sizing: border-box;
-    resize: vertical;
-  }
 
-  label {
-    padding: 12px 12px 12px 0;
-    display: inline-block;
-  }
-  
-  input[type=submit] {
-    background-color: #e2b215;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 40px;
-    cursor: pointer;
-    float: right;
-  }
-  .container {
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
-  }
-  .col-25 {
-    float: left;
-    width: 25%;
-    margin-top: 6px;
-  }
-  .col-75 {
-    float: left;
-    width: 75%;
-    margin-top: 6px;
-  }
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
   @media screen and (max-width: 600px) {
     .col-25, .col-75, input[type=submit] {
       width: 100%;
@@ -825,5 +729,120 @@ img {vertical-align: middle;}
         margin-top: 4rem;
     }
 }
+/*------------------------------------------New Start------------------------------------------*/
 
-  /*------Testing Zone-------*/
+/*---------Headers---------*/
+.header-box {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+/*------------------------------------------Donate_Tab------------------------------------------*/
+/*----------Donate_Section------*/
+input[type=text], select, textarea{
+    width: 50%;
+    padding: 8px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 40px;
+    box-sizing: border-box;
+    resize: vertical;
+  }
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  .container {
+    border-radius: 5px;
+    background-color: #ffffff;
+    padding: 20px;
+    width: 75%;
+    margin: auto;
+  }
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  /*-------DonatePageMedia-----*/
+  @media screen and (max-width: 600px) {
+    .col-25, .col-75, .button {
+      width: 100%;
+      margin-top: 0;
+    }
+}
+/*---------Supporters--------*/
+.supporters-text h1 {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.supporters-text h2 {
+    text-align: center;
+    padding-top: 15px;
+}
+.supporters-text p {
+    text-align: center;
+}
+.supporters-list h1 {
+    text-align: center;
+}
+.supporters-list ul {
+    text-align: center;
+    text-decoration: none;
+    padding-bottom: 50px;
+}
+.supporters-list p {
+    text-align: center;
+    color: #000000;
+    font-size: large;
+}
+/*------------------------------------------News_Tab------------------------------------------*/
+/*------------------------------------------About_Us_Tab--------------------------------------*/
+/*-------What_is_Contour556_Section-------*/
+
+/*------Our_team_Section-------*/
+.ourteam h2 {
+    text-align: center;
+    font-size: medium;
+    text-decoration: underline;
+}
+.column {
+    float: left;
+    width: 25%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+  }
+.ourteam img {
+      width: 100%;
+  }
+.card {
+    margin: 0px;
+  }
+  .container {
+    padding: 0 16px;
+    text-align: center;
+  }
+  
+.container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+@media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  }

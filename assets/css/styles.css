@@ -614,11 +614,14 @@ input[type=text], select, textarea{
     text-align: center;
     padding-top: 100px;
 }
+.aboutus img {
+    width: 100%;
+}
 h1 {
     font-size: 36px;
     font-weight: 600;
 }p {
-    color: #777;
+    color: rgb(0, 0, 0);
     font-size: 14px;
     font-weight: 300;
     line-height: 22px;
@@ -632,7 +635,7 @@ h1 {
 }
 .about-col {
     flex-basis: 31%;
-    background: #d8d4d4;
+    background: #cbd39e;
     border-radius: 10px;
     margin-bottom: 5%;
     padding: 20px 12px;
@@ -642,6 +645,9 @@ h3 {
     text-align: center;
     font-weight: 600;
     margin: 10px 0;
+}
+.popimg img {
+    width: 100%;
 }
 
 /*------------Slideshow_Section------------*/

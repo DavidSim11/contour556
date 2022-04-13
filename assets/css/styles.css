@@ -147,42 +147,6 @@ ul.a {
         flex-direction: column;
     }
 }
-
-/*-----City Commissions----*/
-.citycommissions {
-    width:80%;
-    margin:auto;
-    text-align: center;
-    padding-top: 50px ;
-}
-.commissions-col {
-    flex-basis: 32%;
-    border-radius: 10px;
-    margin-bottom: 30px;
-    position: relative;
-    overflow: hidden;
-}
-.commissions-col img {
-    width: 100%;
-}
-.hero-btn2 {
-    display: inline-block;
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-    border: 1px solid rgb(3, 3, 3);
-    padding: 12px 34px;
-    font-size: 13px;
-    background: transparent;
-    position: relative;
-    cursor: pointer;
-}
-
-.hero-btn2:hover {
-    border: 1px solid #98b613;
-    background: #ca9e0e;
-    transition: 1s;
-}
-
 /*----Festival tab on index----*/
 .festivals {
     width: 80%;
@@ -216,233 +180,10 @@ ul.a {
     margin-bottom: 40px;
     padding: 0;
 }
-
-/*----About Us Page-----*/
-.header2 {
-    min-height: 5vh;
-    width: 100%;
-    background: linear-gradient(rgba(127, 162, 207, 0.7), rgba(147, 167, 167, 0.966)), url(../images/background.png);
-    background-position: center; 
-    background-size: cover;
-    position: relative;
-}
-.whatweare h1 {
-    text-align: center;
-    font-weight: 600;
-    margin: 10px 0;
-}
-.whatweare p{
-    color: rgb(0, 0, 0);
-    font-size: 15px;
-    font-weight: 300;
-    line-height: 22px;
-    padding: 10px;
-    text-align: center;
-}
-/*------Supporters section (About us Page)----*/
-.supporters h1 {
-    text-align: center;
-    font-weight: 600;
-    margin: 10px 0;
-}
-.supporters p {
-    color: rgb(0, 0, 0);
-    font-size: 15px;
-    font-weight: 300;
-    line-height: 22px;
-    padding: 10px;
-    text-align: center;
-}
-.container {
-    overflow: hidden;
-  }
-  .filterDiv {
-    float: left;
-    background-color: #949490;
-    color: #000000;
-    width: 100px;
-    line-height: 30px;
-    text-align: center;
-    margin: 2px;
-    display: none;
-  }
-
-  .show {
-    display: block;
-  }
-  .btn {
-    border: none;
-    outline: none;
-    padding: 12px 16px;
-    background-color: #f1f1f1;
-    cursor: pointer;
-  }
-  .btn:hover {
-    background-color: #ddd;
-  }
-  .btn.active {
-    background-color: #666;
-    color: white;
-  }
-.sect2 h2{
-    text-align: center;
-    font-weight: 150px;
-    margin: 10px 0;
-}
-.hero-btn9 {
-    display: inline-block;
-    text-decoration: none;
-    width: 100%;
-    border: 1px solid rgb(3, 3, 3);
-    background-color: #9faa04;
-    padding: 14px 28px;
-    font-size: 16px;
-    background: transparent;
-    position: relative;
-    cursor: pointer;
-    text-align: center;
-}
-.hero-btn9:hover {
-    border: 1px solid #f44336;
-    background: #9faa04;
-    transition: 1s;
-}
-/*-----Donate Page----*/
-.header3 {
-    min-height: 30vh;
-    width: 100%;
-    background: linear-gradient(rgba(58, 55, 55, 0.7), rgba(59, 61, 61, 0.966)), url(../images/donateheroimg.jpg);
-    background-position: center; 
-    background-size: cover;
-    position: relative;
-}
-.donations p {
-    text-align: center;
-    font-size: medium;
-}
-
-  @media screen and (max-width: 600px) {
-    .col-25, .col-75, input[type=submit] {
-      width: 100%;
-      margin-top: 0;
-    }
-  }
-
- 
-/*-------------Covid 19-----------*/
-.covid h1 {
-    text-align: center;
-    text-decoration: none;
-}
-.covid p {
-    text-align: center;
-}
-.covid-img {
-    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../images/covidimg.jpg);
-    height: 50%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    min-height: 30vh;
-    width: 50%;
-    margin: 100px auto;
-}
-.covid-text {
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-}
-.covid-text button {
-    border: none;
-    outline: 0;
-    display: inline-block;
-    padding: 25px 25px;
-    color: #000000;
-    background-color: #ddd;
-    text-align: center;
-    cursor: pointer;
-}
-.covid-text button:hover {
-    background-color: #555;
-    color: white;
-}
-
-
+/*---------Fix this---------*/
 * {box-sizing: border-box}
-.mySlides1 .mySlides2 {display: none}
 img {vertical-align: middle;}
 
-/*-------Slideshow------*/
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-}
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-.prev:hover, .next:hover {
-  background-color: #f1f1f1;
-  color: black;
-}
-.slideshow img {
-    width: 100%;
-}
-/*------City Commissions------*/
-.columntext {
-    float: left;
-}
-.left {
-    width: 50%;
-}
-.right {
-    width: 50%;
-}
-.columntext h2 {
-    text-align: center;
-    text-decoration: underline;
-}
-.columntext ul li {
-    list-style: none;
-    display: inline-block;
-    padding: 16px;
-    position: relative;
-    text-decoration: solid;
-}
-.column img{
-    width:100%;
-    height:auto;
-    display: inline-block;
-}
-@media screen and (max-width: 600px){
-    .columntext {
-        width: 100%;
-        flex-direction: column;
-    }
-    .column {
-        width: 100%;
-        flex-direction: column;
-    }
-}
 /*------------------------------------------New Start------------------------------------------*/
 
 /*---------Headers---------*/
@@ -451,6 +192,14 @@ img {vertical-align: middle;}
     margin: auto;
     text-align: center;
     padding-top: 100px;
+}
+.header2 {
+    min-height: 5vh;
+    width: 100%;
+    background: linear-gradient(rgba(127, 162, 207, 0.7), rgba(147, 167, 167, 0.966)), url(../images/background.png);
+    background-position: center; 
+    background-size: cover;
+    position: relative;
 }
 /*------------------------------------------Donate_Tab------------------------------------------*/
 /*----------Donate_Section------*/
@@ -571,7 +320,28 @@ input[type=text], select, textarea{
 }
 /*------------------------------------------About_Us_Tab--------------------------------------*/
 /*-------What_is_Contour556_Section-------*/
-
+.column2 {
+    float: left;
+    width: 50%;
+    padding: 10px;
+}
+.column2 img {
+    width: 100%;
+    object-fit: contain;
+}
+.column2 p {
+    text-align: center;
+}
+.row2:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+@media screen and (max-width: 600px) {
+    .column2 {
+      width: 100%;
+    }
+  }
 /*------Our_team_Section-------*/
 .ourteam h2 {
     text-align: center;
@@ -615,7 +385,9 @@ input[type=text], select, textarea{
     padding-top: 100px;
 }
 .aboutus img {
-    width: 100%;
+    max-width: 100%;
+    position: relative;
+    margin: auto;
 }
 h1 {
     font-size: 36px;
@@ -647,7 +419,9 @@ h3 {
     margin: 10px 0;
 }
 .popimg img {
-    width: 100%;
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
 }
 
 /*------------Slideshow_Section------------*/
@@ -758,9 +532,6 @@ h3 {
 }
 
 @media screen and (max-width: 720px) {
-    .footer-3 {
-        display: none;
-    }
     .footer-email-form {
         margin-top: 4rem;
     }

@@ -8,7 +8,7 @@
 .header {
     min-height: 100vh;
     width: 100%;
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(25, 26, 26, 0.966)), url(../images/background.png);
+    background: linear-gradient(rgba(118, 214, 206, 0.7), rgba(123, 97, 136, 0.966)), url(../images/background.png);
     background-position: center; 
     background-size: cover;
     position: relative;
@@ -34,9 +34,9 @@ nav img {
     position: relative;
 }
 .nav-links ul li a {
-    color: #fff;
+    color: rgb(0, 0, 0);
     text-decoration: none;
-    font-size: 13px;
+    font-size: 20px;
 }
 .nav-links ul li::after {
     content: '';
@@ -52,7 +52,7 @@ nav img {
 }
 .text-box {
     width: 90%;
-    color: #fff;
+    color: rgb(0, 0, 0);
     position: absolute;
     top: 50%;
     left: 50%;
@@ -60,18 +60,20 @@ nav img {
     text-align: center;
 }
 .text-box h1 {
-    font-size: 62px;
+    font-size: 100px;
 }
 .text-box p {
     margin: 10px 0 40px;
-    font-size: 14px;
-    color: #fff;
+    font-size: 24px;
+    color: black;
+    text-decoration: solid;
 }
+/*----------Button_for_Main---------*/
 .hero-btn {
     display: inline-block;
     text-decoration: none;
-    color: #fff;
-    border: 1px solid #fff;
+    color: rgb(0, 0, 0);
+    border: 1px solid rgb(0, 0, 0);
     padding: 12px 34px;
     font-size: 13px;
     background: transparent;
@@ -79,23 +81,27 @@ nav img {
     cursor: pointer;
 }
 .hero-btn:hover {
-    border: 1px solid #f44336;
-    background: #f44336;
+    border: 1px solid #fac000;
+    background: #ffbb00;
     transition: 1s;
 }
 nav .fa {
     display: none;
 }
+/*-------Index_Media-------*/
 @media(max-width: 700px) {
     .text-box h1 {
-        font-size: 20px;
+        font-size: 40px;
+    }
+    .text-box p {
+        font-size: 24px;
     }
     .nav-links ul li {
         display: block;
     }
     .nav-links {
         position: absolute;
-        background: #f44336;
+        background: #bce2e4;
         height: 100vh;
         width: 200px;
         top: 0;
@@ -119,7 +125,7 @@ nav .fa {
 .clock {
     margin: 100px auto;
     width: 75%;
-    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../images/banner1.jpg);
+    background-image: linear-gradient(rgba(111, 185, 163, 0.7),rgba(223, 230, 214, 0.7)), url(../images/banner1.jpg);
     background-position: center;
     background-size: cover;
     border-radius: 50px;
@@ -127,13 +133,13 @@ nav .fa {
     padding: 100px 0;
 }
 .clock h1{
-    color: #fff;
+    color: rgb(0, 0, 0);
     margin-bottom: 40px;
     padding: 0;
 }
 .clock p{
-    color: #fff;
-    font-size: larger;
+    color: rgb(0, 0, 0);
+    font-size: xx-large;
 }
 
 .about-col:hover {
@@ -145,6 +151,12 @@ ul.a {
 @media(max-width: 700px) {
     .row {
         flex-direction: column;
+    }
+    .clock h1 {
+        font-size: 20px;
+    }
+    .donate h1 {
+        font-size: medium;
     }
 }
 /*----Festival tab on index----*/
@@ -168,7 +180,7 @@ ul.a {
 .donate {
     margin: 100px auto;
     width: 80%;
-    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../images/banner1.jpg);
+    background-image: linear-gradient(rgba(111, 185, 163, 0.7),rgba(223, 230, 214, 0.7)), url(../images/banner1.jpg);
     background-position: center;
     background-size: cover;
     border-radius: 10px;
@@ -176,9 +188,22 @@ ul.a {
     padding: 100px 0;
 }
 .donate h1 {
-    color: #fff;
+    color: rgb(0, 0, 0);
     margin-bottom: 40px;
     padding: 0;
+}
+/*---------Acknolegdgement----*/
+.country h1 {
+    text-align: center;
+}
+.country p {
+    text-align: center;
+}
+.country img {
+    margin: auto;
+    width: 60%;
+    display: block;
+    
 }
 /*---------Fix this---------*/
 * {box-sizing: border-box}
@@ -430,7 +455,7 @@ h3 {
     padding: 10px;
 }
 .column3 iframe{
-    width: 470px;
+    width: 100%;
     height: 350px;
     border: 0px;
 

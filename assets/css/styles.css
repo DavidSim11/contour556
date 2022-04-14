@@ -222,16 +222,17 @@ input[type=text], select, textarea{
     width: 75%;
     margin: auto;
   }
-  .col-25 {
+  .col2 {
     float: left;
     width: 25%;
     margin-top: 6px;
   }
-  .col-75 {
+  .col1 {
     float: left;
     width: 75%;
     margin-top: 6px;
   }
+  
   .row:after {
     content: "";
     display: table;
@@ -239,7 +240,7 @@ input[type=text], select, textarea{
   }
   /*-------DonatePageMedia-----*/
   @media screen and (max-width: 600px) {
-    .col-25, .col-75, .button {
+    .col2, .col1, .button {
       width: 100%;
       margin-top: 0;
     }
@@ -423,7 +424,27 @@ h3 {
     position: relative;
     margin: auto;
 }
+.column3 {
+    float: left;
+    width: 50%;
+    padding: 10px;
+}
+.column3 iframe{
+    width: 470px;
+    height: 350px;
+    border: 0px;
 
+}
+.row3:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+@media screen and (max-width: 600px) {
+    .column3 {
+      width: 100%;
+    }
+  }
 /*------------Slideshow_Section------------*/
 .slideshow-container {
     max-width: 1000px;

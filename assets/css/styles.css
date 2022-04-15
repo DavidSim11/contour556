@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -141,10 +142,6 @@ nav .fa {
     color: rgb(0, 0, 0);
     font-size: xx-large;
 }
-
-.about-col:hover {
-    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
-}
 ul.a {
     list-style-position: inside;
 }
@@ -176,6 +173,18 @@ ul.a {
     width: 100%;
     border-radius: 10px;
 }
+.hero-btn3 {
+    background-color: #ffffff; 
+    border: 1px solid rgb(0, 0, 0); 
+    color: rgb(0, 0, 0); 
+    padding: 10px 24px; 
+    cursor: pointer; 
+    margin: auto;
+    text-decoration: none;
+  }
+  .hero-btn3:hover {
+    background-color: #ffbb00;
+  }
 /*----Donate Now on index page----*/
 .donate {
     margin: 100px auto;
@@ -195,6 +204,7 @@ ul.a {
 /*---------Acknolegdgement----*/
 .country h1 {
     text-align: center;
+    font-size: x-large;
 }
 .country p {
     text-align: center;
@@ -203,11 +213,12 @@ ul.a {
     margin: auto;
     width: 60%;
     display: block;
+    max-width: 600px;
+    max-height: 600px;
     
 }
 /*---------Fix this---------*/
-* {box-sizing: border-box}
-img {vertical-align: middle;}
+
 
 /*------------------------------------------New Start------------------------------------------*/
 
@@ -217,6 +228,8 @@ img {vertical-align: middle;}
     margin: auto;
     text-align: center;
     padding-top: 100px;
+    white-space:pre-line;
+    
 }
 .header2 {
     min-height: 5vh;
@@ -226,12 +239,18 @@ img {vertical-align: middle;}
     background-size: cover;
     position: relative;
 }
+.header-box h1 {
+    font-size: xx-large;
+}
+.header-box p {
+    font-size: medium;
+}
 /*------------------------------------------Donate_Tab------------------------------------------*/
 /*----------Donate_Section------*/
-input[type=text], select, textarea{
+input[type=text], select, textarea {
     width: 50%;
     padding: 8px;
-    border: 1px solid rgb(0, 0, 0);
+    border: 3px solid rgb(0, 0, 0);
     border-radius: 40px;
     box-sizing: border-box;
     resize: vertical;
@@ -257,7 +276,22 @@ input[type=text], select, textarea{
     width: 75%;
     margin-top: 6px;
   }
-  
+  .row button {
+    background-color: #ffffff; 
+    border: 1px solid rgb(0, 0, 0); 
+    color: rgb(0, 0, 0); 
+    padding: 10px 24px; 
+    cursor: pointer; 
+    margin: auto;
+  }
+  .row button:after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .row button:hover {
+    background-color: #ffbb00;
+  }
   .row:after {
     content: "";
     display: table;
@@ -296,6 +330,16 @@ input[type=text], select, textarea{
     text-align: center;
     color: #000000;
     font-size: large;
+}
+.supporters-text img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 50%;
+    position: relative;
+    max-width: 400px;
+    max-height: 400px;
 }
 /*------------------------------------------News_Tab------------------------------------------*/
 .banner {
@@ -344,6 +388,123 @@ input[type=text], select, textarea{
     background-size: cover;
     position: relative;
 }
+/*-----Hero images-----*/
+.hero-image2 {
+    background: url(../images/localjinnisupportersreport.jpg);
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.hero-text2 {
+    color: white;
+    text-align: center;
+}
+.hero-text2 h1 {
+    font-size: large;
+}
+.hero-image4 {
+    background: url(../images/symposiumpic.jpg);
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.hero-text4 {
+    color: white;
+    text-align: center;
+}
+.hero-text4 h1 {
+    font-size: large;
+}
+.hero-image5 {
+    background: url(../images/officalvideopic.jpg);
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.hero-text5 {
+    color: white;
+    text-align: center;
+}
+.hero-text5 h1 {
+    font-size: large;
+}
+.hero-image6 {
+    background: url(../images/kirstyyfranspic.jpg);
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.hero-text6 {
+    color: white;
+    text-align: center;
+}
+.hero-text6 h1 {
+    font-size: large;
+}
+.hero-image7 {
+    background: url(../images/regionpic.jpg);
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.hero-text7 {
+    color: white;
+    text-align: center;
+}
+.hero-text7 h1 {
+    font-size: large;
+}
+.hero-image8 {
+    background: url(../images/citypic.jpg);
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.hero-text8 {
+    color: white;
+    text-align: center;
+}
+.hero-text8 h1 {
+    font-size: large;
+}
+.hero-image9 {
+    background: url(../images/beachpic.jpg);
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.hero-text9 {
+    color: white;
+    text-align: center;
+}
+.hero-text9 h1 {
+    font-size: large;
+}
+/*-------Covid Section-----*/
+.covidcontent p {
+    text-align: center;
+}
+.covidcontent img {
+    margin: auto;
+    width: 100%;
+    display: block;
+    max-width: 750px;
+    max-height: 750px;
+}
 /*------------------------------------------About_Us_Tab--------------------------------------*/
 /*-------What_is_Contour556_Section-------*/
 .column2 {
@@ -354,9 +515,15 @@ input[type=text], select, textarea{
 .column2 img {
     width: 100%;
     object-fit: contain;
+    max-width: 600px;
 }
 .column2 p {
     text-align: center;
+    font-size: large;
+}
+.column2 li {
+    text-align: center;
+    font-size: large;
 }
 .row2:after {
     content: "";
@@ -416,25 +583,24 @@ input[type=text], select, textarea{
     margin: auto;
 }
 h1 {
-    font-size: 36px;
+    font-size: 60px;
     font-weight: 600;
 }p {
     color: rgb(0, 0, 0);
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 300;
     line-height: 22px;
     padding: 10px;
 }
-
+/*------Contour_yearly----*/
 .row {
     margin-top: 5%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 .about-col {
     flex-basis: 31%;
     background: #cbd39e;
-    border-radius: 10px;
     margin-bottom: 5%;
     padding: 20px 12px;
     box-sizing: border-box;
@@ -444,11 +610,7 @@ h3 {
     font-weight: 600;
     margin: 10px 0;
 }
-.popimg img {
-    max-width: 1000px;
-    position: relative;
-    margin: auto;
-}
+/*-----Videos----*/
 .column3 {
     float: left;
     width: 50%;
@@ -458,7 +620,6 @@ h3 {
     width: 100%;
     height: 350px;
     border: 0px;
-
 }
 .row3:after {
     content: "";
@@ -500,6 +661,10 @@ h3 {
   }
   .slideshow img {
       width: 100%;
+  }
+  .slideshow-container h1 {
+      text-align: center;
+     padding-top: 40px;
   }
 /*------------------------------------Footer------------------------------------*/
 .footer-container {

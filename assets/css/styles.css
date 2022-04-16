@@ -390,7 +390,7 @@ input[type=text], select, textarea {
 }
 /*-----Hero images-----*/
 .hero-image2 {
-    background: url(../images/localjinnisupportersreport.jpg);
+    background: linear-gradient(rgba(179, 190, 189, 0.7), rgba(114, 122, 112, 0.966)), url(../images/localjinnisupportersreport.jpg);
     height: 50%;
     background-position: center;
     background-repeat: no-repeat;
@@ -404,8 +404,11 @@ input[type=text], select, textarea {
 .hero-text2 h1 {
     font-size: large;
 }
+.hero-text2 p {
+    color: white;
+}
 .hero-image4 {
-    background: url(../images/symposiumpic.jpg);
+    background: linear-gradient(rgba(179, 190, 189, 0.7), rgba(114, 122, 112, 0.966)), url(../images/symposiumpic.jpg);
     height: 50%;
     background-position: center;
     background-repeat: no-repeat;
@@ -419,8 +422,11 @@ input[type=text], select, textarea {
 .hero-text4 h1 {
     font-size: large;
 }
+.hero-text4 p {
+    color: white;
+}
 .hero-image5 {
-    background: url(../images/officalvideopic.jpg);
+    background: linear-gradient(rgba(179, 190, 189, 0.7), rgba(114, 122, 112, 0.966)), url(../images/officalvideopic.jpg);
     height: 50%;
     background-position: center;
     background-repeat: no-repeat;
@@ -434,8 +440,11 @@ input[type=text], select, textarea {
 .hero-text5 h1 {
     font-size: large;
 }
+.hero-text5 p {
+    color: white;
+}
 .hero-image6 {
-    background: url(../images/kirstyyfranspic.jpg);
+    background: linear-gradient(rgba(179, 190, 189, 0.7), rgba(114, 122, 112, 0.966)), url(../images/kirstyyfranspic.jpg);
     height: 50%;
     background-position: center;
     background-repeat: no-repeat;
@@ -449,8 +458,11 @@ input[type=text], select, textarea {
 .hero-text6 h1 {
     font-size: large;
 }
+.hero-text6 p {
+    color: white;
+}
 .hero-image7 {
-    background: url(../images/regionpic.jpg);
+    background: linear-gradient(rgba(179, 190, 189, 0.7), rgba(114, 122, 112, 0.966)), url(../images/regionpic.jpg);
     height: 50%;
     background-position: center;
     background-repeat: no-repeat;
@@ -464,8 +476,11 @@ input[type=text], select, textarea {
 .hero-text7 h1 {
     font-size: large;
 }
+.hero-text7 p {
+    color: white;
+}
 .hero-image8 {
-    background: url(../images/citypic.jpg);
+    background: linear-gradient(rgba(179, 190, 189, 0.7), rgba(114, 122, 112, 0.966)), url(../images/citypic.jpg);
     height: 50%;
     background-position: center;
     background-repeat: no-repeat;
@@ -479,8 +494,11 @@ input[type=text], select, textarea {
 .hero-text8 h1 {
     font-size: large;
 }
+.hero-text8 p {
+    color: white;
+}
 .hero-image9 {
-    background: url(../images/beachpic.jpg);
+    background: linear-gradient(rgba(179, 190, 189, 0.7), rgba(114, 122, 112, 0.966)), url(../images/beachpic.jpg);
     height: 50%;
     background-position: center;
     background-repeat: no-repeat;
@@ -493,6 +511,9 @@ input[type=text], select, textarea {
 }
 .hero-text9 h1 {
     font-size: large;
+}
+.hero-text9 p {
+    color: white;
 }
 /*-------Covid Section-----*/
 .covidcontent p {

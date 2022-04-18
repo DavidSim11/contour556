@@ -173,6 +173,9 @@ ul.a {
     width: 100%;
     border-radius: 10px;
 }
+.festivals h1 {
+    font-size: medium;
+}
 .hero-btn3 {
     background-color: #ffffff; 
     border: 1px solid rgb(0, 0, 0); 
@@ -297,6 +300,7 @@ input[type=text], select, textarea {
     display: table;
     clear: both;
   }
+
   /*-------DonatePageMedia-----*/
   @media screen and (max-width: 600px) {
     .col2, .col1, .button {
@@ -310,6 +314,7 @@ input[type=text], select, textarea {
     margin: auto;
     text-align: center;
     padding-top: 100px;
+    font-size: medium;
 }
 .supporters-text h2 {
     text-align: center;
@@ -320,6 +325,7 @@ input[type=text], select, textarea {
 }
 .supporters-list h1 {
     text-align: center;
+    font-size: medium;
 }
 .supporters-list ul {
     text-align: center;
@@ -686,6 +692,7 @@ h3 {
   .slideshow-container h1 {
       text-align: center;
      padding-top: 40px;
+     font-size: medium;
   }
 /*------------------------------------Footer------------------------------------*/
 .footer-container {
